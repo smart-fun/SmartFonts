@@ -1,9 +1,11 @@
 # Smart Fonts for Android
-**Smart Fonts for Android** is an Android Studio Library which makes it easy to use **Custom Fonts** (TTF or OTF) in your Android applications. It can be used with all types of text widgets (**TextView, EditText, 	CheckBox, Button, ToggleButton, AutoCompleteTextView**). If one is missing you can add it easily, and you can even create your **own classes**!
+**Smart Fonts** is an Android Studio Library which makes it easy to use **Custom Fonts** (TTF or OTF) in your apps. It handles the Android text widgets (**TextView, EditText, CheckBox, RadioButton...**). You can add any other widgets easily, including your **own classes**!
 
-You can use **styles** with custom fonts, and even see the result directly in the **Layout Editor**!
+You can use **Styles**, and see the result directly in the **Layout Editor**!
 
 A manager handles the **caching** of the fonts so that they are loaded only once. If a font is not used it is not loaded.
+
+It is easy to integrate with **gradle**.
 
 ![alt text](app/extras/editor_screenshot.png?raw=true "see the result while editing!")
 
