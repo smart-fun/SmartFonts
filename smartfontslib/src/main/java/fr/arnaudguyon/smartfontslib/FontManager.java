@@ -58,12 +58,7 @@ public class FontManager {
     public Typeface getTypeface(@NonNull Context context, @NonNull String path) throws RuntimeException {
         Typeface typeface = mFontCache.get(path);
         if (typeface == null) {
-            try {
-                typeface = Typeface.createFromAsset(context.getAssets(), path);
-            } catch (RuntimeException exception) {
-                String message = "Font assets/" + path + " cannot be loaded";
-                throw new RuntimeException(message);
-            }
+            typeface = Typeface.createFromAsset(context.getAssets(), path);
             mFontCache.put(path, typeface);
         }
         return typeface;
