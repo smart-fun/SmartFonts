@@ -79,7 +79,7 @@ Then use it everywhere, no more need to define the "font" attribute directly.
 
 ```xml
 <fr.arnaudguyon.smartfontslib.FontTextView
-    style="@style/CustomTitleStyle"
+    style="@style/MyTitleStyle"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:text="Hello Title Style"/>
