@@ -132,7 +132,7 @@ Add the libary dependency to your **APP** build.gradle file
 
 ```
 dependencies {
-    compile 'com.github.smart-fun:SmartFonts:1.0.1'    // add this line
+    compile 'com.github.smart-fun:SmartFonts:1.0.2'    // add this line
 }
 ```
 
@@ -152,9 +152,3 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-## Font Licences
-
-Some fonts are embedded in the sample App:
-
-* Souses (Souses.otf) under SIL Open Font License Version 1.1
-* Linux Libertine (LinLibertine_R.ttf) under SIL Open Font License Version 1.0
