@@ -1,7 +1,0 @@
-<resources>
-    <string name="app_name">Smart Fonts</string>
-
-    <string translatable="false" name="fontTitle">fonts/Souses.otf</string>
-    <string translatable="false" name="fontNotice">fonts/LinLibertine_R.ttf</string>
-
-</resources>
