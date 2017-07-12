@@ -54,12 +54,7 @@ xmlns:app="http://schemas.android.com/apk/res-auto"
 
 Thanks to the autocompletion it is fast to add a view:
 
-![alt text](app/extras/auto_class_screenshot.png?raw=true "class autocompletion")
-
-![alt text](app/extras/auto_attrib_screenshot.png?raw=true "attribute autocompletion")
-
-
-![alt text](app/extras/auto_fontname_screenshot.png?raw=true "font name autocompletion")
+![alt text](app/extras/autocompletion.gif?raw=true "class autocompletion")
 
 
 ## Use with styles
