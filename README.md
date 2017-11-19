@@ -9,6 +9,11 @@ It is easy to integrate with **gradle**.
 
 ![alt text](app/extras/editor_screenshot.png?raw=true "see the result while editing!")
 
+## Important Notice
+
+Since Android 8 (API 26) Google has introduced "Fonts in XML", so if your App targets API 26 or higher, consider using Google solution instead of this library. See
+https://developer.android.com/guide/topics/ui/look-and-feel/fonts-in-xml.html
+
 ## Usage
 
 Before starting to code, you must copy your font files (.TTF or .ODT) in the **"assets"** folder of your application. This folder may not exist so you'll probably have to create it (usually app/scr/main/assets).
@@ -30,7 +35,7 @@ Now you can use the widgets from the library in your layouts.
 
 The Class names are composed with "Font" + the usual Android class name: **Font**TextView, **Font**CheckBox, **Font**Button, ...
 
-To use the new "font" attribute, you'll have to add this in top of your layout:
+To use the new "smart_font" attribute, you'll have to add this in top of your layout:
 
 xmlns:app="http://schemas.android.com/apk/res-auto"
 
@@ -47,30 +52,30 @@ xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World"
-        app:font="@string/fontNotice" />
+        app:smart_font="@string/fontNotice" />
         
     ...
 ```
 
-Thanks to the autocompletion it is fast to add a view:
+<!--Thanks to the autocompletion it is fast to add a view:
 
-![alt text](app/extras/autocompletion.gif?raw=true "class autocompletion")
+<![alt text](app/extras/autocompletion.gif?raw=true "class autocompletion") -->
 
 
 ## Use with styles
 
 I recommend to always use styles in your projects (with or without this library). It is a little bit more work to do once, but so much time saved after!
 
-To use the custom fonts in your style, simply add the "font" attribute.
+To use the custom fonts in your style, simply add the "smart_font" attribute.
 
 ```xml
 <style name="MyTitleStyle" parent="@android:style/Widget.TextView">
-    <item name="font">@string/fontTitle</item>
+    <item name="smart_font">@string/fontTitle</item>
     <item name="android:textSize">16sp</item>
 </style>
 ```
 
-Then use it everywhere, no more need to define the "font" attribute directly.
+Then use it everywhere, no more need to define the "smart_font" attribute directly.
 
 ```xml
 <fr.arnaudguyon.smartfontslib.FontTextView
@@ -127,7 +132,7 @@ Add the libary dependency to your **APP** build.gradle file
 
 ```
 dependencies {
-    compile 'com.github.smart-fun:SmartFonts:1.0.2'    // add this line
+    compile 'com.github.smart-fun:SmartFonts:1.0.3'    // add this line
 }
 ```
 
