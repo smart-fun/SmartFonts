@@ -90,7 +90,7 @@ public class FontManager {
         if (attrs != null) {
             Context context = textView.getContext();
             TypedArray styledAttributes = context.getTheme().obtainStyledAttributes(attrs, R.styleable.TextView, 0, 0);
-            String fontPath = styledAttributes.getString(R.styleable.TextView_font);
+            String fontPath = styledAttributes.getString(R.styleable.TextView_smart_font);
             if (!TextUtils.isEmpty(fontPath)) {
                 Typeface typeface = getTypeface(context, fontPath);
                 if (typeface != null) {
