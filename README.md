@@ -132,7 +132,7 @@ Add the libary dependency to your **APP** build.gradle file
 
 ```
 dependencies {
-    compile 'com.github.smart-fun:SmartFonts:1.0.3'    // add this line
+    compile 'com.github.smart-fun:SmartFonts:1.0.4'    // add this line
 }
 ```
 
